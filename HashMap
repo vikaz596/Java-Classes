@@ -1,0 +1,45 @@
+import java.util.*;
+
+/**
+* created by VIKAS SINGH
+* on 21 JAN 2016
+*/
+
+public class Solution {
+	public static void main(String args[]) {
+		
+		// This is how you declare a HashMap
+		HashMap<Integer, String> hm = new HashMap<Integer, String>();
+		
+		// Adding elements to HashMap
+		hm.put(12,"Chaitanya");
+		hm.put(7,"Swati");
+		hm.put(3,"Neeraj");
+		hm.put(16,"Shivani");
+		hm.put(17,"Vikas");
+		hm.put(3,"Neerajaa");
+		
+		Set set = hm.entrySet();
+		
+		Iterator iterator = set.iterator();
+		
+		while(iterator.hasNext()) {
+			Map.Entry me = (Map.Entry) iterator.next();
+			System.out.println(me.getKey() + " : " + me.getValue());
+		}
+		
+		System.out.println(hm.get(2));  // it will display null
+		
+		hm.remove(12);
+		
+		set = hm.entrySet();
+		
+		iterator = set.iterator();
+		
+		while(iterator.hasNext()) {
+			Map.Entry me = (Map.Entry) iterator.next();
+			System.out.println(me.getKey() + " : " + me.getValue());
+		}
+		
+	}
+}
