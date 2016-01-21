@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+/**
+* created by VIKAS SINGH
+* on 21 JAN 2016
+*/
+
+public class Solution {
+	public static void main(String args[]) {
+		ArrayList<Character> al = new ArrayList<Character>();
+		System.out.println(al.size());
+		
+		al.add('C');
+		al.add('D');
+		al.add('A');
+		al.add('B');
+		al.add('E');
+		
+		System.out.println("Elements : " + al);
+		System.out.println(al.size());
+		
+		al.remove(3);
+		
+		System.out.println("Elements : " + al);
+		System.out.println(al.size());
+	}
+}
